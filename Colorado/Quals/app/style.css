@@ -1,0 +1,348 @@
+html, body{
+    background-color: #5cb85c;
+    padding: 0%;
+    margin: 0%;
+    height: 100% !important;
+    width: 100%;
+    position: fixed;
+}
+
+.figure{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+
+#screen{
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#startContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 10px 26px -4px rgba(0,0,0,0.75);
+    border-radius: 25px;
+}
+
+#buttonStart{
+    width: 60%;
+    height: 30%;
+    border-radius: 25px;
+    font-size: 3vw;
+    background-color:#5cb85c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 26px -4px rgba(0,0,0,0.75);
+
+}
+
+#frame{
+    background-color: white;
+    height: 80%;
+    width: 95%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 10px 26px -4px rgba(0,0,0,0.75);
+}
+#teamInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+}
+
+#teamNumberContainer{
+    font-size: 1.5vw;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#taTeam, #match{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 40%;
+    text-align: center;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+#time{
+    width: 10%;
+    height: 100%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+#timer{
+    transform: translateY(10%);
+    margin-left: 3%;
+}
+
+#stage{
+    font-size: 1.5vw;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#readyEndgame{
+    width: 100%;
+    height: 100%;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 3%;
+    box-shadow: 0px 10px 26px -4px rgba(0,0,0,0.75);
+
+}
+
+#currentPeriod{
+    margin-left: 3%;
+}
+
+#field{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rocket{
+    background-color: #D3D3D3;
+    height: 80%;
+    width: 25%;
+    position: relative;
+    justify-content: space-between;
+}
+
+#cargoShip{
+    background-color: #D3D3D3;
+    height: 80%;
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rocket-col{
+    height: 100%;
+    width: 49%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rocket-level{
+    height: 34%;
+    width: 100%;
+    background-color: white;
+}
+
+.cargo-side{
+    height: 98%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#sandstorm{
+    font-size: 1.5vw;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#teleop{
+    font-size: 1.5vw;
+    width: 90%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#endgame{
+    font-size: 1.5vw;
+    width: 70%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#finalFeedback{
+    height: 90%;
+    width: 60%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buttonSubmit{
+    border-radius: 25px;
+    background-color: #5cb85c;
+    box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+    color: white;
+    height: 8%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.minus{
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+    height: 100%;
+    text-align: center;
+    width: 25%;
+    padding: 2%;
+    background-color: #f09412;
+}
+.buttonText{
+    text-align: center;
+    width: 50%;
+}
+.plus{
+    cursor: pointer;
+    color:white;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    padding: 2%;
+    background-color: #f09412;
+    border-radius: 25px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 8%;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.buttonSandstorm{
+    padding: 1% 8% 1% 8%;
+    border-radius: 25px;
+    background-color: #5cb85c;
+    box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+}
+
+.buttonTeleop{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+    padding: 1% 4% 1% 4%;
+    border-radius: 25px;
+    background-color: #f0ad4e;
+    box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+}
+
+.buttonEndgame{
+    padding: 1% 8% 1% 8%;
+    border-radius: 25px;
+    background-color: #d9534f;
+    color: white;
+    box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.75);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.cargobay{
+    height: 24%;
+    width: 100%;
+    background-color: white;
+}
+
+.hatch{
+    transition: ease-in;
+    transition-duration: 0.3s;
+    background-color: yellow;
+}
+
+.cargo{
+    transition: ease-in;
+    transition-duration: 0.3s;
+    background-color: tomato;
+}
+.completed{
+    transition: ease-in;
+    transition-duration: 0.5s;
+    background: linear-gradient(135deg, #ffed6b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+}
+
+.buttonDefense{
+    width: 100%;
+    padding: 2% 8% 2% 8%;
+}
+
+.buttonTeleopActive{
+    background-color: #b87c2a;
+}
+.buttonSandstormActive{
+    background-color: #428a42;
+}
+.buttonFinishedActive{
+  color: black !important;
+  background-color: white  !important;
+}
+.buttonFinished{
+  color: black !important;
+  background-color: white  !important;
+}
+.commentSelected{
+    background-color: rgb(104, 169, 190);
+}
